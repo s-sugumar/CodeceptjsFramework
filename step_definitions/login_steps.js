@@ -2,16 +2,16 @@ const loginPage = require("../pages/login_page");
 const {userdetails} = require("../config.js");
 const loginPageObj = new loginPage();
 
-Given('Open login page for "{word}"', (url) => {
-  loginPageObj.openUrl(userdetails[url].superAdminUrl);
+Given('Open login page for "{word}"', () => {
+  loginPageObj.openUrl(userdetails.superAdminUrl);
 });
 
 When('Enter Email for "{word}"', () => {
-  loginPageObj.enterUsernameField(userdetails.portalAdmin[email]);
+  loginPageObj.enterUsernameField(userdetails.portalAdmin.email);
 });
 
-Then('Enter Password for "{word}"', (password) => { 
-  loginPageObj.enterPasswordField(userdetails.portalAdmin[password]);
+Then('Enter Password for "{word}"', () => { 
+  loginPageObj.enterPasswordField(userdetails.portalAdmin.pass);
 });
 
 Then('Click login button', () => {

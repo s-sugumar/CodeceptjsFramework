@@ -2,7 +2,7 @@ let userdetails= {
     superAdminUrl: "https://tel-qa-sa.sourcef.us/login",
     portalAdmin:{
         name:'SF Portal Admin',
-        user:'sfportaladmin@yopmail.com',
+        email:'sfportaladmin@yopmail.com',
         pass:'Test@123'
     }
 }
